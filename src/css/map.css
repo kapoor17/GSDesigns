@@ -1,0 +1,29 @@
+button {
+    background: rgb(202, 202, 202);
+  }
+  .marker {
+    position: absolute;
+    transition: all 2s ease;
+    font-size: 10px;
+    cursor: pointer;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: red;
+  }
+  section #map {
+    width:75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+  #map img{
+    width:100%;height: auto;
+  }
+  .mapContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+  }
+  
