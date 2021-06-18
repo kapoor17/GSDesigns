@@ -3,9 +3,9 @@ import {Link } from 'react-router-dom';
 function Navbar(){
     return(
         <>
-            <nav className="navbar navbar-expand-sm navbar-light " style={{padding:"20px 100px"}}>
+            <nav className="navbar navbar-expand-sm navbar-light" style={{padding:"20px 100px"}}>
                 <div className="nav-item font-weight-bold " >
-                    <Link className="nav-link" style={{fontSize:"1.5rem",color:"black"}} to="/home">GSDesigns</Link>
+                    <Link className="nav-link" style={{fontSize:"1.25rem",color:"black"}} to="/home">GSDesigns</Link>
                 </div>
                 <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation"></button> 
