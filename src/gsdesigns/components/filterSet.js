@@ -7,10 +7,10 @@ function FilterSet({category,categoryHandler}){
     }
     return(
     <>
-        <div class="filterSet" onClick={changeCategory} id={category.id} >
-            <span class="filterIcon" style={{backgroundColor:category.Color,borderBottom:`2px solid ${category.Color}`}} id={category.Color}>
+        <div className="filterSet" onClick={changeCategory} id={category.id} >
+            <span className="filterIcon" style={{backgroundColor:category.Color,borderBottom:`2px solid ${category.Color}`}} id={category.Color}>
             </span>
-            <span class="filterText" > {category.Category}</span>
+            <span className="filterText" > {category.Category}</span>
         </div>
     </>
     );
