@@ -1,57 +1,53 @@
-.button-section{
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    z-index:22;
-    bottom:1em;
-    align-items: center;
+.button-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 22;
+  bottom: 1em;
+  align-items: center;
 }
-.button-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.page-button{
-    text-decoration: none;
-    color:white;
-    background-color: black;
-    border-radius: 20px;
-    margin-bottom: 0.2em;
-    font-weight: 500;
-    padding:0.4em 1em;
-    transition: all 0.5s ease;
-    border:2px solid transparent;
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.page-button:hover{
-    color:black;
-    border-color:black;
-    background-color:transparent;
+.page-button {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  margin-bottom: 0.2em;
+  font-weight: 500;
+  padding: 0.4em 1em;
+  transition: all 0.5s ease;
+  border: 2px solid transparent;
 }
-.arrow-icon{
-    color:black;
-    position: relative;
-    font-size: 1.3em;
 
+.page-button:hover {
+  color: black;
+  border-color: black;
+  background-color: transparent;
 }
-.button-container:hover .arrow-icon{
-    animation-name: arrowBounce;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-
+.arrow-icon {
+  color: black;
+  position: relative;
+  font-size: 1.3em;
+}
+.button-container:hover .arrow-icon {
+  animation-name: arrowBounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 @keyframes arrowBounce {
-
-    0%{
-       top: 0px;
-    }
-    50%{
-        top: 10px;
-    }
-    100%{
-        top: 0px;
-
-    }
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+  }
 }
