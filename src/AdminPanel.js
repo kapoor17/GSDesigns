@@ -15,6 +15,7 @@ import EditProject from './pages-AdminPanel/editProject'
 import SideBar from './components/sidebar'
 import ViewPages from './pages-AdminPanel/viewPages';
 import PageEditor from './pages-AdminPanel/pageEditor';
+import './css/admin-panel.css';
 
 function Content(){
 
