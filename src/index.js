@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router} from 'react-router-dom';
-import './fonts/Helvetica Neue LT 43 Light Extended.ttf'
+import './fonts/Helvetica-Neue-Light_22503.ttf'
 
 ReactDOM.render(
   <React.StrictMode>

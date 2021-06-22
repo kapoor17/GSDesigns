@@ -9,7 +9,10 @@ import "../css/home.css"
 
 const Home=()=>{
     
-    const [recentNews, getRecentNews]=useState([1,2,3]);
+    const [recentNews, getRecentNews]=useState([
+    {url:photo1, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, sapiente? Eligendi optio aut eveniet nisi, aspernatur, veniam esse sit voluptatem ullam aperiam aliquid corrupti molestiae?"},
+    {url:photo2, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."},
+    {url:photo3,text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum laudantium necessitatibus. Id, dolore mollitia corrupti itaque nulla error incidunt architecto accusantium quod sequi laudantium! Veniam nobis cumque ipsum mollitia, architecto facilis repellendus nulla voluptate"}]);
 
     const images =[photo1,photo2,photo3];
 
@@ -100,11 +103,13 @@ const Home=()=>{
             </section>
             
 
-            <section className="section p-4 rn-container">
+            <section className="section p-4 rn-container border border-danger">
                 <div className="container-md">
-                    {recentNews.map(news=>(
-                        <RecentNewsCard/>
-                    ))}
+                    <div className="row">
+                        {recentNews.map(news=>(
+                            <RecentNewsCard url={news.url} text={news.text}/>
+                        ))}
+                    </div>
                 </div>
             </section>
 
