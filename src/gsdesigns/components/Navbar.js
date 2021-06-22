@@ -1,10 +1,12 @@
 import React from 'react';
 import {Link } from 'react-router-dom';
+import '../css/navbar.css'
+
 function Navbar(){
     return(
         <>
             <nav className="navbar navbar-expand-sm navbar-light " style={{padding:"20px 100px"}}>
-                <div className="nav-item font-weight-bold " >
+                <div className="nav-logo font-weight-bold " >
                     <Link className="nav-link" style={{fontSize:"1.5rem",color:"black"}} to="/home">GSDesigns</Link>
                 </div>
                 <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
