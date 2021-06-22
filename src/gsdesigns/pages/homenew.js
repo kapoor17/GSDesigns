@@ -1,14 +1,16 @@
-import React,{useEffect} from "react";
+import React,{useEffect,useState} from "react";
 import photo1 from "../components/carousel-photos/photo1.jpg";
 import photo2 from "../components/carousel-photos/photo2.jpg";
 import photo3 from "../components/carousel-photos/photo3.jpg";
 import PageButton from "../components/pageButton";
 import {Carousel, LeftButton, RightButton} from "../components/Carousel"
-import CardComponent from "../components/CardComponent";
+import RecentNewsCard from '../components/RecentNewsCard.js'
 import "../css/home.css"
 
 const Home=()=>{
     
+    const [recentNews, getRecentNews]=useState([1,2,3]);
+
     const images =[photo1,photo2,photo3];
 
     useEffect(()=>{
@@ -75,7 +77,7 @@ const Home=()=>{
     
     return(
         <>
-            <section className="section carousel p-4">
+            <section className="section carousel p-4 border border-danger">
                 <div className="inner-container">
 
                     <div className="carousel__button-container left is-hidden">
@@ -99,13 +101,11 @@ const Home=()=>{
             
 
             <section className="section p-4 rn-container">
-                <div className="container-md rn-inner">
-                    <h2 className="rn-title">Recent News</h2>
-                    {images.map((index)=>(
-                        <CardComponent data={index} />
+                <div className="container-md">
+                    {recentNews.map(news=>(
+                        <RecentNewsCard/>
                     ))}
                 </div>
-
             </section>
 
             <PageButton title="View Projects" link="/projectMap" />

@@ -10,6 +10,10 @@
   margin: 0 auto;
   position: relative;
 }
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
 .carousel-container {
   position: relative;
   overflow: hidden;
@@ -57,30 +61,3 @@
 .right {
   right: -60px;
 }
-.rn-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.rn-title {
-  margin-bottom: 1em;
-}
-.card-header {
-  background: rgb(179, 179, 179);
-}
-.rn-child + .rn-child {
-  margin-top: 1em;
-}
-/* .outer-container {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 900px;
-  /* border: 1px solid black; 
-  margin-bottom: 2em;
-}
-.inner-container {
-  width: 95%;
-  margin: 0 auto;
-  /* border: 1px solid red; 
-} */
