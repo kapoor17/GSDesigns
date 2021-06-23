@@ -1,0 +1,11 @@
+.recent-news {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.recent-news img {
+  vertical-align: middle;
+  width: 100%;
+  object-fit: cover;
+}
