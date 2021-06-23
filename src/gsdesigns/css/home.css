@@ -5,7 +5,9 @@
 }
 .swiper-container {
   margin-top: 1em;
-  height: 350px;
+  height: 40vh;
+  width: 90%;
+  max-width: 1500px;
 }
 .swiper-slide {
   display: flex;
@@ -34,6 +36,9 @@
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
+  .swiper-container {
+    height: 25vh;
+  }
   .column {
     flex: 50%;
     max-width: 50%;

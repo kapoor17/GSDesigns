@@ -53,7 +53,7 @@ const Home=()=>{
     
     return(
         <>
-            <section className="section p-4 carousel">
+            <section className="section py-4 carousel">
                 <div className="swiper-container">
                     <div className="swiper-wrapper">
                         {images.map((image,index)=>(
@@ -63,8 +63,8 @@ const Home=()=>{
                 </div>
             </section>
             
-            <section className="section p-4 rn-container">
-                <div className="container-md">
+            <section className="section p-4">
+                <div className="container-md rn-container">
                     <div className="row">
                         <div className="column">
                             {recentNewsa.map(news=>(
