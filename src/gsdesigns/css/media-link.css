@@ -1,0 +1,11 @@
+.media-links {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  margin-right: 0.75em;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.media-link-child + .media-link-child {
+  margin-left: 0.125em;
+}
