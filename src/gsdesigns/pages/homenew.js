@@ -14,6 +14,7 @@ import photoh from "../components/recent-news photos/photoh.jpg";
 import photoi from "../components/recent-news photos/photoi.jpg";
 import photoj from "../components/recent-news photos/photoj.jpg";
 import PageButton from "../components/pageButton";
+import MediaLinks from "../components/MediaLinks";
 import RecentNewsCard from '../components/RecentNewsCard.js'
 import "../css/home.css"
 import Swiper from 'swiper/bundle';
@@ -53,7 +54,7 @@ const Home=()=>{
     
     return(
         <>
-            <section className="section py-4 carousel">
+            <section className="section py-4 carousel border border-danger">
                 <div className="swiper-container">
                     <div className="swiper-wrapper">
                         {images.map((image,index)=>(
@@ -86,7 +87,7 @@ const Home=()=>{
             </section>
 
             <PageButton title="View Projects" link="/projectMap" />
-
+            <MediaLinks/>
          </>
     );
 }
