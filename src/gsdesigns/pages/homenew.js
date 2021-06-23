@@ -54,7 +54,7 @@ const Home=()=>{
     
     return(
         <>
-            <section className="section py-4 carousel border border-danger">
+            <section className="section py-4 carousel">
                 <div className="swiper-container">
                     <div className="swiper-wrapper">
                         {images.map((image,index)=>(
