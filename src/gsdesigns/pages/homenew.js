@@ -19,7 +19,6 @@ import '../css/contact.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPhone,faEnvelope, faMapPin} from '@fortawesome/free-solid-svg-icons'
 import PageButton from "../components/pageButton";
-import MediaLinks from "../components/MediaLinks";
 import RecentNewsCard from '../components/RecentNewsCard.js'
 import "../css/home.css"
 
@@ -89,9 +88,9 @@ const Home=()=>{
                 </div>
             </section>
 
-            <section className="section p-5">
+            <section className="section p-5" id="contact">
                 <div className="container-md">
-                    <div className="heading fs-1 mb-5">Contact Us</div>
+                    <div className="heading mb-5">Contact Us</div>
                     <div className="d-flex justify-content-between align-items-start">
                         <div className="contact fs-5 d-flex flex-column justify-content-between align-items-start">
                             <div className="contact-details w-100 d-flex justify-content-start align-items-start">
@@ -126,7 +125,6 @@ const Home=()=>{
             </section>
 
             <PageButton title="View Projects" link="/projectMap" />
-            <MediaLinks/>
          </>
     );
 }

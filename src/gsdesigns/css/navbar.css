@@ -1,3 +1,13 @@
-.nav-item + .nav-item {
-  padding-left: 1em;
+@media (min-width: 576px) {
+  .navbar-nav {
+    margin-left: auto;
+  }
+  .nav-item + .nav-item {
+    padding-left: 1em;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-nav {
+    margin: 0 auto;
+  }
 }

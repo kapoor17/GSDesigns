@@ -7,5 +7,5 @@
   right: 0;
 }
 .media-link-child + .media-link-child {
-  margin-left: 0.125em;
+  margin-left: 0.25em;
 }

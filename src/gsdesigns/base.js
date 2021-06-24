@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import AboutUs from './pages/aboutUs';
 import ProjectMap from './pages/projectMap';
 import ContactUs from './pages/contact';
+import MediaLinks from './components/MediaLinks';
 
 function Base(){
 
@@ -29,14 +30,9 @@ function Base(){
                 <Route path="/contact">
                     <ContactUs/>
                 </Route>
-
-                {/* <Route path="/projectMap">
-                    <ProjectMapPage/>
-                </Route> */}
-
-
             </Switch>
         </div>
+        <MediaLinks/>
         </>
     );
 }
