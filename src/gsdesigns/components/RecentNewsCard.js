@@ -6,7 +6,7 @@ const RecentNewsCard=(props)=>{
         <div className="recent-news">
             <img src={props.url} alt="" />
             <h3 className="py-2">TITLE FOR RECENT NEWS</h3>
-            <p className="p-0 m-0">date/month</p>
+            <p className="p-0 m-0 me-auto">date/month</p>
             <p>{props.text}</p>
         </div>
     );

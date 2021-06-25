@@ -1,11 +1,31 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 25%;
+  max-width: 25%;
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 .recent-news {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 1em;
 }
 .recent-news img {
   vertical-align: middle;
-  width: 100%;
-  object-fit: cover;
+  width: 90%;
 }

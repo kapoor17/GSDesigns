@@ -8,9 +8,20 @@ body {
 img {
   max-width: 100%;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 /* project-map-page */
-
 button {
   background: rgb(202, 202, 202);
 }
@@ -48,7 +59,6 @@ section #map {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  
 }
 .filterSet {
   /* border: 1px solid black; */
@@ -57,8 +67,8 @@ section #map {
   overflow: hidden;
   cursor: pointer;
 }
-.filterSet+.filterSet{
-    margin-left:2em;
+.filterSet + .filterSet {
+  margin-left: 2em;
 }
 .filterIcon {
   width: 1em;

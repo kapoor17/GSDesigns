@@ -54,7 +54,7 @@ const Home=()=>{
     
     return(
         <>
-            <section className="section pb-4 carousel">
+            <section className="section pb-5" id="carousel">
                 <div className="swiper-container container-lg p-0">
                     <div className="swiper-wrapper">
                         {images.map((image,index)=>(
@@ -64,10 +64,11 @@ const Home=()=>{
                 </div>
             </section>
             
-            <section className="section p-4">
-                <div className="container-lg rn-container">
-                    <div className="row">
-                        <div className="column">
+            <section className="section" id="recent-news">
+                <div className="container-lg px-3 ">
+                    {/* child of rows have some kind of styling thats why column has a padding */}
+                    <div className="row ">   
+                        <div className="column ">
                             {recentNewsa.map(news=>(
                                 <RecentNewsCard url={news.url} text={news.text}/>
                             ))}
@@ -86,10 +87,10 @@ const Home=()=>{
                 </div>
             </section>
 
-            <section className="section p-5" id="contact">
-                <div className="container-md">
+            <section className="section pt-5" id="contact">
+                <div className="container-md p-0 bg-primary">
                     <div className="heading mb-5">Contact Us</div>
-                    <div className="d-flex justify-content-between align-items-start">
+                    <div className="contact-us-container">
                         <div className="contact fs-5 d-flex flex-column justify-content-between align-items-start">
                             <div className="contact-details w-100 d-flex justify-content-start align-items-start">
                                 <FontAwesomeIcon icon={faEnvelope}/>
