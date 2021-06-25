@@ -55,7 +55,7 @@ const Home=()=>{
     return(
         <>
             <section className="section pb-4 carousel">
-                <div className="swiper-container">
+                <div className="swiper-container container-lg p-0">
                     <div className="swiper-wrapper">
                         {images.map((image,index)=>(
                             <SwiperComponent src={image} alt={index}/>
