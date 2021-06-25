@@ -36,16 +36,19 @@ section #map {
   width: 75%;
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-start;
   /* border: 2px solid red; */
 }
 .filter {
   font-size: 1rem;
   display: flex;
-  height: 100%;
-  align-items: stretch;
-  flex-direction: column;
+  width: 75%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  
 }
 .filterSet {
   /* border: 1px solid black; */
@@ -53,16 +56,15 @@ section #map {
   align-items: center;
   overflow: hidden;
   cursor: pointer;
-  width: 100%;
 }
-.filterSet + .filterSet {
-  margin-top: 1em;
+.filterSet+.filterSet{
+    margin-left:2em;
 }
 .filterIcon {
   width: 1em;
   height: 1em;
   border-radius: 3px;
-  z-index: -1;
+  z-index: 9;
 }
 .filterText {
   /* border: 1px solid black; */

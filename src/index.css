@@ -1,8 +1,7 @@
 @font-face {
   font-family: "HelveticaNew";
   src: local("HelveticaNew"),
-    url("./fonts/Helvetica-Neue-Light_22503.ttf") format("truetype");
-  font-weight: normal;
+    url("./fonts/helveticaNuoLight.ttf") format("truetype");
 }
 * {
   font-family: HelveticaNew !important;

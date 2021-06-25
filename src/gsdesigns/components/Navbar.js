@@ -4,7 +4,7 @@ import '../css/navbar.css'
 
 function Navbar(){
     return(
-                <nav className="navbar navbar-expand-sm navbar-light container-xl my-o mx-auto px-5">
+                <nav className="navbar navbar-expand-sm navbar-light">
                         <a className="navbar-brand " href="/home">GSDesigns</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -21,11 +21,10 @@ function Navbar(){
                                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         About Us
                                     </a>
-                                    <ul className="dropdown-menu flex-column align-items-center" aria-labelledby="navbarDropdown">
-                                        <li><a className="dropdown-item" href="#">Our Team</a></li>
-                                        <li><a className="dropdown-item" href="#">Our Team Details</a></li>
-                                        <li><a className="dropdown-item" href="#">About Us</a></li>
-                                    </ul>
+                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a className="dropdown-item text-center" href="#">Our Team</a>
+                                        <a className="dropdown-item text-center" href="#">About Us</a>
+                                    </div>
                                 </li>
                                 <li className="nav-item">
                                     <a href="#contact" className="nav-link">Contact</a>
