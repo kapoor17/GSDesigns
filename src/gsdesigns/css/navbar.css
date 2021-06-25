@@ -1,15 +1,9 @@
-.navbar{
-  padding:1.2rem 5rem 0rem 5rem!important;
-}
-.nav-item{
-  margin-right: 3rem!important;
-}
 @media (min-width: 576px) {
   .navbar-nav {
     margin-left: auto;
   }
   .nav-item + .nav-item {
-    padding-left: 1em;
+    padding-left: 2.5rem;
   }
 }
 @media (max-width: 576px) {

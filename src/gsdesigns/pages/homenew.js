@@ -29,8 +29,6 @@ const Home=()=>{
         {url:photob, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."},
         {url:photoc,text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum laudantium necessitatibus. Id, dolore mollitia corrupti itaque nulla error incidunt architecto accusantium quod sequi laudantium! Veniam nobis cumque ipsum mollitia, architecto facilis repellendus nulla voluptate"},
         {url:photod, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."},
-        {url:photoe, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, sapiente? Eligendi optio aut eveniet nisi, aspernatur, veniam esse sit voluptatem ullam aperiam aliquid corrupti molestiae?"},
-        {url:photof, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, sapiente? Eligendi optio aut eveniet nisi, aspernatur, veniam esse sit voluptatem ullam aperiam aliquid corrupti molestiae?"}
     ]);
 
     const [recentNewsb, getRecentNewsb]=useState([
@@ -56,7 +54,7 @@ const Home=()=>{
     
     return(
         <>
-            <section className="section py-4 carousel">
+            <section className="section pb-4 carousel">
                 <div className="swiper-container">
                     <div className="swiper-wrapper">
                         {images.map((image,index)=>(
