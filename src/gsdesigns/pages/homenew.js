@@ -87,28 +87,29 @@ const Home=()=>{
                 </div>
             </section>
 
-            <section className="section pt-5" id="contact">
-                <div className="container-md p-0 bg-primary">
-                    <div className="heading mb-5">Contact Us</div>
-                    <div className="contact-us-container">
-                        <div className="contact fs-5 d-flex flex-column justify-content-between align-items-start">
-                            <div className="contact-details w-100 d-flex justify-content-start align-items-start">
-                                <FontAwesomeIcon icon={faEnvelope}/>
+            <section className="section py-5" id="contact">
+                <div className="container-md p-0  ">
+                    <div className="contact-heading mb-4 ">Contact Us</div>
+                    <div className="contact-us-container d-flex justify-content-between align-items-start">
+                        <div className="our-details-container mb-4 d-flex flex-column justify-content-center align-items-start  px-4 fs-5">
+                            <div className=" our-contact-details d-flex justify-content-center align-items-start mb-3 ">
+                                <FontAwesomeIcon className="me-3" icon={faEnvelope}/>
                                 <p>info@gsdesigns.com.in</p>
                             </div>
-                            <div className="contact-details w-100 d-flex justify-content-start align-items-start">
-                                <FontAwesomeIcon icon={faPhone}/>
+                            <div className="our-contact-details d-flex justify-content-center align-items-start mb-3">
+                                <FontAwesomeIcon className="me-3" icon={faPhone}/>
                                 <p>1300 806 809</p>
                             </div>
-                            <div className="contact-details w-100 d-flex justify-content-start align-items-start">
-                                <FontAwesomeIcon icon={faMapPin}/>
+                            <div className=" our-contact-details d-flex justify-content-center align-items-start mb-3">
+                                {/* margin for pin is greater than others because of the size of it */}
+                                <FontAwesomeIcon className="me-4" icon={faMapPin}/>
                                 <p>lorem ipsum dolor</p>
                             </div>
                         </div>
-                        <div className="form-container py-3 px-4 d-flex flex-column justify-content-center align-items-start">
-                                <p className="instruction">Fill out the form below and our team will be in touch with you shortly.</p>
+                        <div className="form-container px-3">
+                            <p className="instruction font-weight-bold">Fill out the form below and our team will be in touch with you shortly.</p>
                             <form className="form d-flex flex-column justify-content-center align-items-start">
-                                <input type="text" id="name" name="name" value="Name" />
+                                <input type="text" id="name" name="name" value="Name"/>
                                 <input type="text" id="email" name="email" value="Email" />
                                 <input type="text" id="phone" name="email" value="Phone Number" />
                                 <div className="flex-overide d-flex">
