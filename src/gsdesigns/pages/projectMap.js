@@ -36,6 +36,7 @@ function ProjectMapPage()
 
     return(
         <>
+            <div className="navbar-filler my-4 py-3"></div>
             <section className="section d-flex justify-content-center">
                 
             <section className="p-4 w-100">

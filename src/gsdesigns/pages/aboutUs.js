@@ -6,6 +6,7 @@ const aboutUs=()=>{
 
     return (
     <>
+        <div className="navbar-filler my-4 py-3"></div>
         <div className="container-fluid background-photo-aboutUs">
         </div>
             <section className="section p-4">

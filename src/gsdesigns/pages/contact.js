@@ -5,7 +5,8 @@ import {faPhone,faEnvelope, faMapPin} from '@fortawesome/free-solid-svg-icons'
 
 const ContactUs=()=>{
     return(
-        <>
+        <>           
+            <div className="navbar-filler my-4 py-3"></div>
             <div className="container-fluid background-photo-contactUs">
             </div>
             <section className="section p-5">
