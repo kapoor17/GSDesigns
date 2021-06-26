@@ -54,6 +54,7 @@ const Home=()=>{
     
     return(
         <>
+            <div className="navbar-filler my-4 py-3"></div>
             <section className="section pb-5" id="carousel">
                 <div className="swiper-container container-lg p-0">
                     <div className="swiper-wrapper">
@@ -88,7 +89,7 @@ const Home=()=>{
             </section>
 
             <section className="section py-5" id="contact">
-                <div className="container-md p-0  ">
+                <div className="container-lg p-0  ">
                     <div className="contact-heading mb-4 ">Contact Us</div>
                     <div className="contact-us-container d-flex justify-content-between align-items-start">
                         <div className="our-details-container mb-4 d-flex flex-column justify-content-center align-items-start  px-4 fs-5">
