@@ -9,12 +9,6 @@ function Navbar(){
         window.addEventListener("scroll",()=>{
             const navbar= document.querySelector("header");
             navbar.classList.toggle("sticky",window.scrollY>0);
-            if(navbar.classList.contains("sticky")){
-                navbar.classList.add("py-0");
-            }else{
-                navbar.classList.remove("py-0");
-
-            }
         })
     })
 

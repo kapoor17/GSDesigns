@@ -51,7 +51,7 @@ const Home=()=>{
             direction:'horizontal',
           });
     })
-    
+
     return(
         <>
             <div className="navbar-filler my-4 py-3"></div>
