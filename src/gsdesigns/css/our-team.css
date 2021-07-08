@@ -1,0 +1,33 @@
+.square:before {
+  content: "";
+  display: block;
+  padding-top: 95%; /* initial ratio of 1:1*/
+}
+.our-team-column {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-team-column .avatar {
+  font-size: 5rem;
+}
+.hover-info {
+  padding: 0.5em;
+  z-index: 100;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  transition: all 0.175s ease-in-out;
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}
