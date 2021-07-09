@@ -69,17 +69,17 @@ const Home=()=>{
                 <div className="container-lg px-3 ">
                     {/* child of rows have some kind of styling thats why column has a padding */}
                     <div className="row ">   
-                        <div className="column ">
+                        <div className="column px-1 ">
                             {recentNewsa.map(news=>(
                                 <RecentNewsCard url={news.url} text={news.text}/>
                             ))}
                         </div>
-                        <div className="column">
+                        <div className="column px-1">
                             {recentNewsb.map(news=>(
                                 <RecentNewsCard url={news.url} text={news.text}/>
                             ))}
                         </div>
-                        <div className="column">
+                        <div className="column px-1">
                             {recentNewsa.map(news=>(
                                 <RecentNewsCard url={news.url} text={news.text}/>
                             ))}
