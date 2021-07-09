@@ -35,7 +35,8 @@ const OurTeam =()=>{
         <div className="navbar-filler my-4 py-3"></div>
         <section className="section p-4">
             <div className="container-lg our-team-container">
-                <div class="row our-team-row">
+                <div className="our-team-heading mb-4">Our Team</div>
+                <div class="row">
                     {cards.map((card,index)=>(
                         <OurTeamCards src={card} index={index}/>
                     ))}

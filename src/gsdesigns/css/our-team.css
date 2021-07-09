@@ -8,6 +8,10 @@
   height: 100%;
   object-fit: cover;
 }
+.our-team-heading {
+  font-size: 3.5rem;
+  border-bottom: 2px solid black;
+}
 .hover-info {
   padding: 1em;
   z-index: 100;
