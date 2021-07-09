@@ -1,22 +1,18 @@
-.square:before {
-  content: "";
-  display: block;
-  padding-top: 95%; /* initial ratio of 1:1*/
-}
 .our-team-column {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.our-team-column .avatar {
-  font-size: 5rem;
+.our-team-column img {
+  height: 100%;
+  object-fit: cover;
 }
 .hover-info {
-  padding: 0.5em;
+  padding: 1em;
   z-index: 100;
   color: black;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
