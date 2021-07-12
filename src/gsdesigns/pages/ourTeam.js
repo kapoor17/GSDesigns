@@ -18,7 +18,6 @@ const OurTeam =()=>{
     const cards=[avatar1,avatar2,avatar3,avatar4,avatar5,avatar6,avatar7,avatar8,avatar9,avatar10,avatar11,avatar12]
 
     useEffect(()=>{
-        const ourTeamColumn=Array.from(document.querySelectorAll(".our-team-column"));
         const hoverInfo=Array.from(document.querySelectorAll(".hover-info"))
 
         hoverInfo.forEach(info=>{
