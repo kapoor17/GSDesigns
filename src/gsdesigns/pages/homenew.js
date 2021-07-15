@@ -5,17 +5,14 @@ import photo1 from "../components/carousel-photos/photo1.jpg";
 import photo2 from "../components/carousel-photos/photo2.jpg";
 import photo3 from "../components/carousel-photos/photo3.jpg";
 import SwiperComponent from "../components/SwiperComponent";
-import photoa from "../components/recent-news photos/photoa.jpg";
-import photob from "../components/recent-news photos/photob.jpg";
-import photoc from "../components/recent-news photos/photoc.jpg";
-import photod from "../components/recent-news photos/photod.jpg";
-import photoe from "../components/recent-news photos/photoe.jpg";
-import photof from "../components/recent-news photos/photof.jpg";
-import photog from "../components/recent-news photos/photog.jpg";
-import photoh from "../components/recent-news photos/photoh.jpg";
-import photoi from "../components/recent-news photos/photoi.jpg";
-import photoj from "../components/recent-news photos/photoj.jpg";
-import '../css/contact.css';
+import photoa from "../components/recent-news photos/photoa-min.jpg";
+import photob from "../components/recent-news photos/photob-min.jpg";
+import photoc from "../components/recent-news photos/photoc-min.jpg";
+import photod from "../components/recent-news photos/photod-min.jpg";
+import photog from "../components/recent-news photos/photog-min.jpg";
+import photoh from "../components/recent-news photos/photoh-min.jpg";
+import photoi from "../components/recent-news photos/photoi-min.jpg";
+import photoj from "../components/recent-news photos/photoj-min.jpg";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPhone,faEnvelope, faMapPin} from '@fortawesome/free-solid-svg-icons'
 import PageButton from "../components/pageButton";
@@ -43,11 +40,13 @@ const Home=()=>{
 
     useEffect(()=>{
 
-        const swiper = new Swiper('.swiper-container', {
+        const swiperHome = new Swiper('.swiper-container', {
+            grabCursor:true,
+            loop:true,
+            speed:1000, 
             autoplay: {
               delay: 5000,
             },
-            speed:1000,
             direction:'horizontal',
           });
     })
@@ -56,12 +55,13 @@ const Home=()=>{
         <>
             <div className="navbar-filler my-4 py-3"></div>
             <section className="section pb-5" id="carousel">
-                <div className="swiper-container container-lg p-0">
+                <div className="swiper-container swiper-home container-lg p-0">
                     <div className="swiper-wrapper">
                         {images.map((image,index)=>(
                             <SwiperComponent src={image} alt={index}/>
                         ))} 
                     </div>
+                    <div class="swiper-pagination swiper-pagination1"></div>
                 </div>
             </section>
             

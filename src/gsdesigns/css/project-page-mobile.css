@@ -1,0 +1,18 @@
+.swiper-project {
+  height: 300px;
+}
+.swiper-wrapper-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide-mobile {
+  height: 250px;
+  width: 200px;
+  border-radius: 7px;
+}
+.swiper-slide-mobile img {
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+}

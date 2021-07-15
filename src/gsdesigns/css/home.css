@@ -1,9 +1,9 @@
-.swiper-container {
+.swiper-home {
   height: 50vh;
   max-height: 500px;
 }
 @media screen and (max-width: 800px) {
-  .swiper-container {
+  .swiper-home {
     height: 30vh;
   }
 }
