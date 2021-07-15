@@ -24,7 +24,7 @@ function Navbar(){
                         <li className="nav-item">
                             <Link className="nav-link" to="/home">Home</Link>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link className="nav-link" to="/projectMap">Projects</Link>
                         </li>
                         <li className="nav-item dropdown">

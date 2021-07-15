@@ -10,7 +10,7 @@ const aboutUs=()=>{
         <div className="container-fluid background-photo-aboutUs">
         </div>
             <section className="section p-4">
-                <div className="container-md d-flex flex-column p-4 ">
+                <div className="container-lg d-flex flex-column p-4 ">
                         <div className="d-flex flex-column align-items-start p-3 upper">
                             <h2 className="mb-5 font-weight-bold fs-1">CURRICULLUM VITAE</h2>
                             <div className="details d-flex align-items-center">

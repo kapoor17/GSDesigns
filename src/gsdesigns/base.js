@@ -6,8 +6,8 @@ import IndexPage from './pages/index';
 import Home from "./pages/homenew"
 import OurTeam from './pages/ourTeam';
 import AboutUs from './pages/aboutUs';
+import ProjectPageForMobile from './pages/projectPageMobile';
 import ProjectMap from './pages/projectMap';
-import ContactUs from './pages/contact';
 
 function Base(){
 
@@ -23,7 +23,7 @@ function Base(){
                     <Home /> 
                 </Route>
                 <Route path="/projectMap">
-                    <ProjectMap/>
+                    <ProjectPageForMobile/>
                 </Route>
                 <Route path="/ourTeam">
                     <OurTeam/>
@@ -31,9 +31,9 @@ function Base(){
                 <Route path="/aboutUs">
                     <AboutUs/>
                 </Route>
-                <Route path="/contact">
+                {/* <Route path="/contact">
                     <ContactUs/>
-                </Route>
+                </Route> */}
             </Switch>
         </div>
         <MediaLinks/>

@@ -1,7 +1,4 @@
-import React,{useEffect} from "react";
-import OurTeam from "../pages/ourTeam";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faUserTie} from '@fortawesome/free-solid-svg-icons'
+import React,{} from "react";
 
 const OurTeamCards=(props)=>{
     console.log(props);
