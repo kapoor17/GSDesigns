@@ -36,6 +36,7 @@ const ProjectPageForMobile = () =>{
     return (
         <>
             <div className="navbar-filler my-4 py-3"></div>
+
             <section className="section p-4">
                 <div className="swiper-container swiper-project">
                     <div className="swiper-wrapper">
