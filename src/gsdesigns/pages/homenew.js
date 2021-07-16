@@ -40,30 +40,29 @@ const Home=()=>{
 
     useEffect(()=>{
 
-        const swiperHome = new Swiper('.swiper-container', {
-            grabCursor:true,
-            loop:true,
-            speed:1000, 
-            autoplay: {
-              delay: 5000,
-            },
-            direction:'horizontal',
-          });
+        // const swiperHome = new Swiper('.swiper-container', {
+        //     grabCursor:true,
+        //     loop:true,
+        //     speed:1000, 
+        //     autoplay: {
+        //       delay: 5000,
+        //     },
+        //     direction:'horizontal',
+        //   });
     })
 
     return(
         <>
             <div className="navbar-filler my-4 py-3"></div>
-            <section className="section pb-5" id="carousel">
+            {/* <section className="section pb-5" id="carousel">
                 <div className="swiper-container swiper-home container-lg p-0">
                     <div className="swiper-wrapper">
                         {images.map((image,index)=>(
                             <SwiperComponent src={image} alt={index}/>
                         ))} 
                     </div>
-                    <div class="swiper-pagination swiper-pagination1"></div>
                 </div>
-            </section>
+            </section> */}
             
             <section className="section" id="recent-news">
                 <div className="container-lg px-3 ">

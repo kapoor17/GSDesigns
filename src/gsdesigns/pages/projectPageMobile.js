@@ -19,17 +19,20 @@ const ProjectPageForMobile = () =>{
 
     useEffect(()=>{
 
-        const swiperProject = new Swiper('.swiper-project', {
-            spaceBetween:40,
+        const swiper = new Swiper('.swiper-container', {
             centeredSlides:true,
-            grabCursor:true,
-            slidesPerView:3,
-            direction:'horizontal',
-            pagination:{
-                el:'.swiper-pagination2',
-                clickable:true,
-            }
-          });
+            slidesPerView:'auto',
+            spaceBetween:40,
+            grabCursor: true,
+            loop:true,
+            speed:1000, 
+            autoplay: {
+                waitForTransition:true,
+                disableOnInteraction:false,
+                delay: 5000,
+            },
+                direction:'horizontal',
+            });
     })
 
 
@@ -38,13 +41,12 @@ const ProjectPageForMobile = () =>{
             <div className="navbar-filler my-4 py-3"></div>
 
             <section className="section p-4">
-                <div className="swiper-container swiper-project">
+                <div className="swiper-container swiper-mobile">
                     <div className="swiper-wrapper">
                         {imagesProject.map((image,index)=>(
                             <SwiperComponentMobile src={image} alt={index}/>
                         ))} 
                     </div>
-                    <div class="swiper-pagination swiper-pagination2"></div>
                 </div>
             </section>
         </>
