@@ -3,9 +3,7 @@ import photoa from "../components/recent-news photos/photoa.jpg";
 import photob from "../components/recent-news photos/photob.jpg";
 import photoc from "../components/recent-news photos/photoc.jpg";
 import photod from "../components/recent-news photos/photod.jpg";
-import photog from "../components/recent-news photos/photog.jpg";
 import photoh from "../components/recent-news photos/photoh.jpg";
-import photoi from "../components/recent-news photos/photoi.jpg";
 import photoj from "../components/recent-news photos/photoj.jpg";
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
@@ -15,7 +13,7 @@ import '../css/project-page-mobile.css'
 
 const ProjectPageForMobile = () =>{
 
-    const imagesProject =[photoa,photob,photoc,photod,photog,photoh,photoi,photoj];
+    const imagesProject =[photoa,photob,photoc,photod,photoh,photoj];
 
     useEffect(()=>{
 

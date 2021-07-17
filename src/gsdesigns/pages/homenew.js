@@ -9,9 +9,7 @@ import photoa from "../components/recent-news photos/photoa.jpg";
 import photob from "../components/recent-news photos/photob.jpg";
 import photoc from "../components/recent-news photos/photoc.jpg";
 import photod from "../components/recent-news photos/photod.jpg";
-import photog from "../components/recent-news photos/photog.jpg";
 import photoh from "../components/recent-news photos/photoh.jpg";
-import photoi from "../components/recent-news photos/photoi.jpg";
 import photoj from "../components/recent-news photos/photoj.jpg";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPhone,faEnvelope, faMapPin} from '@fortawesome/free-solid-svg-icons'
@@ -25,13 +23,11 @@ const Home=()=>{
         {url:photoa, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, sapiente? Eligendi optio aut eveniet nisi, aspernatur, veniam esse sit voluptatem ullam aperiam aliquid corrupti molestiae?"},
         {url:photob, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."},
         {url:photoc,text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum laudantium necessitatibus. Id, dolore mollitia corrupti itaque nulla error incidunt architecto accusantium quod sequi laudantium! Veniam nobis cumque ipsum mollitia, architecto facilis repellendus nulla voluptate"},
-        {url:photod, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."},
     ]);
-
+    
     const [recentNewsb, getRecentNewsb]=useState([
-        {url:photog, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, sapiente? Eligendi optio aut eveniet nisi, aspernatur, veniam esse sit voluptatem ullam aperiam aliquid corrupti molestiae?"},
+        {url:photod, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."},
         {url:photoh, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."},
-        {url:photoi,text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum laudantium necessitatibus. Id, dolore mollitia corrupti itaque nulla error incidunt architecto accusantium quod sequi laudantium! Veniam nobis cumque ipsum mollitia, architecto facilis repellendus nulla voluptate"},
         {url:photoj, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."}
     ]);
     
