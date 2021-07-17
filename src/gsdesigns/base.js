@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 import {Switch,Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import MediaLinks from './components/MediaLinks';
@@ -10,6 +10,25 @@ import ProjectPageForMobile from './pages/projectPageMobile';
 import ProjectMap from './pages/projectMap';
 
 function Base(){
+
+    useEffect(()=>{
+        window.addEventListener("load",function(){
+            screenSize();
+        })
+        window.addEventListener("resize",function(){
+            screenSize();
+        });
+    })
+    
+    var state;
+    const screenSize=()=>{
+        var size=window.screen.width;
+        if(size>=600)
+            state=true;
+        else
+            state=false;
+    }
+
 
     return(
         <>

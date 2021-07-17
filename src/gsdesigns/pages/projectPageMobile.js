@@ -25,7 +25,10 @@ const ProjectPageForMobile = () =>{
     ];
 
     useEffect(()=>{
-
+        
+        window.addEventListener("resize",()=>{
+        })
+        
         const swiper = new Swiper('.swiper-mobile', {
             centeredSlides:true,
             slidesPerView:'auto',
@@ -48,17 +51,19 @@ const ProjectPageForMobile = () =>{
         <>
             <div className="navbar-filler my-4 py-3"></div>
             <section id="section-swiper-mobile" className="section p-4 d-flex justify-content-center align-items-center">
-                <div className="filters p-4">
-                    <Link className="back-button" to="/projectMap">
-                        <FontAwesomeIcon className="me-2" icon={faArrowLeft}/>
-                        Back
-                    </Link>
-                </div>
-                <div className="swiper-container swiper-mobile container-lg">
-                    <div className="swiper-wrapper">
-                        {imagesProject.map((image,index)=>(
-                            <SwiperComponentMobile src={image.url} alt={index} type={image.projectText} num={image.projectNumber}/>
-                        ))} 
+                <div class="container-lg position-relative">
+                    <div className="CTA-project-map p-4">
+                        <Link className="back-button" to="/projectMap">
+                            <FontAwesomeIcon className="me-2" icon={faArrowLeft}/>
+                            Back
+                        </Link>
+                    </div>
+                    <div className="swiper-container swiper-mobile container-lg">
+                        <div className="swiper-wrapper">
+                            {imagesProject.map((image,index)=>(
+                                <SwiperComponentMobile src={image.url} alt={index} type={image.projectText} num={image.projectNumber}/>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

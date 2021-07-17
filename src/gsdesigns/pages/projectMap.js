@@ -5,6 +5,7 @@ import {getCombo} from '../../requests/apis'
 import ProjectList from '../components/projectList';
 import { Link } from 'react-router-dom';
 import $ from "jquery"
+import '../css/project-map.css'
 function ProjectMapPage()
 {
 
@@ -39,12 +40,12 @@ function ProjectMapPage()
         <>
             <div className="navbar-filler my-4 py-3"></div>
             <section className="section d-flex justify-content-center">    
-                <section className="p-4 w-100 border border-danger">
-                    <section className="mapContainer border border-danger">
+                <section className="p-4 w-100">
+                    <section className="mapContainer">
+                        <Link className="to-listing-button" to="/projectListing">View List</Link>
                         <CategoryFilters categoryHandler={categoryChange} />
                         <MapComponent categoryId={category?category.id:null} handleMarker={markerChange} />
                     </section>
-                        <Link className="to-listing-button" to="/projectListing">View List</Link>
                 </section>
                 <ProjectList markerId={marker} categoryId={category?category.id:null} />
             </section>

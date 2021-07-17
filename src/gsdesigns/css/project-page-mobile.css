@@ -2,11 +2,10 @@
   height: 80vh;
   position: relative;
 }
-.filters {
+.CTA-project-map {
   position: absolute;
-  top: 0%;
-  left: 0%;
-  right: 0%;
+  top: -30%;
+  left: -3%;
 }
 .swiper-mobile {
   height: 350px;
@@ -35,6 +34,7 @@
 }
 .slide-mobile .number {
   position: absolute;
+  bottom: -34px;
   left: 0px;
   z-index: 100;
 }
@@ -57,10 +57,16 @@
 .back-button:hover {
   color: black;
 }
+.to-listing-button:hover {
+  color: white;
+}
 .to-listing-button {
+  position: absolute;
+  left: 0%;
+  bottom: 0;
   background-color: black;
   border-radius: 100px;
-  padding: 0.25em 0.5em;
+  padding: 0.2em 0.75em;
   color: white;
   text-decoration: none;
   cursor: pointer;
