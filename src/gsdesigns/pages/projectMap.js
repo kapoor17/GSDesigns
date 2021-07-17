@@ -3,6 +3,7 @@ import CategoryFilters from '../components/categoryFilters';
 import MapComponent from '../components/mapComponent';
 import {getCombo} from '../../requests/apis'
 import ProjectList from '../components/projectList';
+import { Link } from 'react-router-dom';
 import $ from "jquery"
 function ProjectMapPage()
 {
@@ -37,16 +38,15 @@ function ProjectMapPage()
     return(
         <>
             <div className="navbar-filler my-4 py-3"></div>
-            <section className="section d-flex justify-content-center">
-                
-            <section className="p-4 w-100">
-                <section className="mapContainer">
-                <CategoryFilters categoryHandler={categoryChange} />
-                <MapComponent categoryId={category?category.id:null} handleMarker={markerChange} />
+            <section className="section d-flex justify-content-center">    
+                <section className="p-4 w-100 border border-danger">
+                    <section className="mapContainer border border-danger">
+                        <CategoryFilters categoryHandler={categoryChange} />
+                        <MapComponent categoryId={category?category.id:null} handleMarker={markerChange} />
+                    </section>
+                        <Link className="to-listing-button" to="/projectListing">View List</Link>
                 </section>
-                
-            </section>
-            <ProjectList markerId={marker} categoryId={category?category.id:null} />
+                <ProjectList markerId={marker} categoryId={category?category.id:null} />
             </section>
         </>
     );

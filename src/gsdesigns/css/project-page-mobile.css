@@ -48,3 +48,20 @@
   transform: scale(1.15);
   transition: all 0.45s ease-in-out;
 }
+.back-button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  width: 60px;
+}
+.back-button:hover {
+  color: black;
+}
+.to-listing-button {
+  background-color: black;
+  border-radius: 100px;
+  padding: 0.25em 0.5em;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

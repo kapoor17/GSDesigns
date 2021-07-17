@@ -23,6 +23,9 @@ function Base(){
                     <Home /> 
                 </Route>
                 <Route path="/projectMap">
+                    <ProjectMap/>
+                </Route>
+                <Route path="/projectListing">
                     <ProjectPageForMobile/>
                 </Route>
                 <Route path="/ourTeam">
