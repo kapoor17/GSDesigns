@@ -41,7 +41,6 @@ function MapComponent({categoryId,handleMarker})
                     transformY:-y,
                 }]);
             }
-            console.log(transform);
     }
     return(
         <>
