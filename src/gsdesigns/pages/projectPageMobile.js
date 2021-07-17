@@ -13,14 +13,21 @@ import '../css/project-page-mobile.css'
 
 const ProjectPageForMobile = () =>{
 
-    const imagesProject =[photoa,photob,photoc,photod,photoh,photoj];
+    const imagesProject =[
+        {url:photoa, projectText:"type of project", projectNumber:"Project X"},
+        {url:photob, projectText:"type of project", projectNumber:"Project X"},
+        {url:photoc, projectText:"type of project", projectNumber:"Project X"},
+        {url:photod, projectText:"type of project", projectNumber:"Project X"},
+        {url:photoh, projectText:"type of project", projectNumber:"Project X"},
+        {url:photoj, projectText:"type of project", projectNumber:"Project X"},
+    ];
 
     useEffect(()=>{
 
         const swiper = new Swiper('.swiper-mobile', {
             centeredSlides:true,
             slidesPerView:'auto',
-            spaceBetween:40,
+            spaceBetween:45,
             grabCursor: true,
             loop:true,
             speed:1000, 
@@ -38,12 +45,12 @@ const ProjectPageForMobile = () =>{
     return (
         <>
             <div className="navbar-filler my-4 py-3"></div>
-
-            <section className="section p-4">
+            <section id="section-swiper-mobile" className="section p-4 d-flex justify-content-center align-items-center">
+                <div className="filters py-4"></div>
                 <div className="swiper-container swiper-mobile container-lg">
                     <div className="swiper-wrapper">
                         {imagesProject.map((image,index)=>(
-                            <SwiperComponentMobile src={image} alt={index}/>
+                            <SwiperComponentMobile src={image.url} alt={index} type={image.projectText} num={image.projectNumber}/>
                         ))} 
                     </div>
                 </div>
