@@ -28,7 +28,7 @@
   object-fit: cover;
   border-radius: 7px;
 }
-.swiper-slide-active {
+.slide-mobile-active {
   transform: scale(1.2);
   transition: all 0.45s ease-in-out;
 }

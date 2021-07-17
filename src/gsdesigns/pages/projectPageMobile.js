@@ -19,7 +19,7 @@ const ProjectPageForMobile = () =>{
 
     useEffect(()=>{
 
-        const swiper = new Swiper('.swiper-container', {
+        const swiper = new Swiper('.swiper-mobile', {
             centeredSlides:true,
             slidesPerView:'auto',
             spaceBetween:40,
@@ -31,7 +31,8 @@ const ProjectPageForMobile = () =>{
                 disableOnInteraction:false,
                 delay: 5000,
             },
-                direction:'horizontal',
+            direction:'horizontal',
+            slideActiveClass:'slide-mobile-active',
             });
     })
 
@@ -41,7 +42,7 @@ const ProjectPageForMobile = () =>{
             <div className="navbar-filler my-4 py-3"></div>
 
             <section className="section p-4">
-                <div className="swiper-container swiper-mobile">
+                <div className="swiper-container swiper-mobile container-lg">
                     <div className="swiper-wrapper">
                         {imagesProject.map((image,index)=>(
                             <SwiperComponentMobile src={image} alt={index}/>
