@@ -3,8 +3,8 @@ import photoa from "../components/recent-news photos/photoa.jpg";
 import photob from "../components/recent-news photos/photob.jpg";
 import photoc from "../components/recent-news photos/photoc.jpg";
 import photod from "../components/recent-news photos/photod.jpg";
-import photoh from "../components/recent-news photos/photoh.jpg";
-import photoj from "../components/recent-news photos/photoj.jpg";
+import photoe from "../components/recent-news photos/photoe.jpg";
+import photof from "../components/recent-news photos/photof.jpg";
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 import SwiperComponentMobile from '../components/SwiperComponentMobile';
@@ -20,8 +20,8 @@ const ProjectPageForMobile = () =>{
         {url:photob, projectText:"type of project", projectNumber:"Project X"},
         {url:photoc, projectText:"type of project", projectNumber:"Project X"},
         {url:photod, projectText:"type of project", projectNumber:"Project X"},
-        {url:photoh, projectText:"type of project", projectNumber:"Project X"},
-        {url:photoj, projectText:"type of project", projectNumber:"Project X"},
+        {url:photoe, projectText:"type of project", projectNumber:"Project X"},
+        {url:photof, projectText:"type of project", projectNumber:"Project X"},
     ];
 
     useEffect(()=>{

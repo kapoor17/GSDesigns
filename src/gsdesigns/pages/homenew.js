@@ -9,8 +9,8 @@ import photoa from "../components/recent-news photos/photoa.jpg";
 import photob from "../components/recent-news photos/photob.jpg";
 import photoc from "../components/recent-news photos/photoc.jpg";
 import photod from "../components/recent-news photos/photod.jpg";
-import photoh from "../components/recent-news photos/photoh.jpg";
-import photoj from "../components/recent-news photos/photoj.jpg";
+import photoe from "../components/recent-news photos/photoe.jpg";
+import photof from "../components/recent-news photos/photof.jpg";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPhone,faEnvelope, faMapPin} from '@fortawesome/free-solid-svg-icons'
 import PageButton from "../components/pageButton";
@@ -27,8 +27,8 @@ const Home=()=>{
     
     const recentNewsb=[
         {url:photod, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."},
-        {url:photoh, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."},
-        {url:photoj, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."}
+        {url:photoe, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."},
+        {url:photof, text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, delectus. Lorem ipsum dolor sit amet."}
     ];
     
 
