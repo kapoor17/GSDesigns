@@ -83,7 +83,7 @@ const Home=()=>{
                 </div>
             </section>
 
-            <section className="section py-5" id="contact">
+            <section className="section py-5 mb-5" id="contact">
                 <div className="container-lg p-0  ">
                     <div className="contact-heading mb-4 ">Contact Us</div>
                     <div className="contact-us-container d-flex justify-content-between align-items-start">
@@ -113,7 +113,7 @@ const Home=()=>{
                                     <input type="text" id="how" name="how" value="How did you find us" />
                                 </div>
                                 <input type="text" id="msg" name="msg" value="Message" />
-                                <input type="submit" value="Submit" className="submit"/>
+                                <input type="submit" value="Submit" className="border border-dark submit"/>
                             </form>
                         </div>
                     </div>
